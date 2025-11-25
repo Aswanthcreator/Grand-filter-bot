@@ -12,3 +12,7 @@ aiohttp
 python-dotenv
 psutil
 setuptools
+openai==1.40.0
+datetime
+
+
