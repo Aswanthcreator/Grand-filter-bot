@@ -20,7 +20,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '8548987113:AAGjswWSXO1qTRbcLzpg7GW1aKv9KhE
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 # Bot images & videos
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/35cbee26b7ab58a5cbcaf.jpg')).split()
