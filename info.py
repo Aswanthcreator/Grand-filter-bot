@@ -19,11 +19,11 @@ API_HASH = environ.get('API_HASH', 'b215f8e05089c399ed89170544621a70')
 BOT_TOKEN = environ.get('BOT_TOKEN', '8548987113:AAGjswWSXO1qTRbcLzpg7GW1aKv9KhEoR6g')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+CACHE_TIME = int(environ.get('CACHE_TIME', 7200))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/35cbee26b7ab58a5cbcaf.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/50c479efbcda3c6efdee3-5045b96d0f5aebcd66.jpg')).split()
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/ea40f1b53dd3b6315c130.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/2a888a370f479f4338f7c.jpg")
 
@@ -58,8 +58,8 @@ IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '🗃️ <b>{file_caption}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@GRANDCINEMAS](https://t.me/grandcinemas)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '🗃️ <b>{file_caption}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@GRANDCINEMAS](https://t.me/grandcinemas)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '🗃️ <b>{file_name}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@GRANDCINEMAS](https://t.me/grandcinemas)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '🗃️ <b>{file_name}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@GRANDCINEMAS](https://t.me/grandcinemas)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", '🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10  \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n\n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [GRANDCINEMAS](https://t.me/grandcinemas)')
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
